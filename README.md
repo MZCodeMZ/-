@@ -12,6 +12,8 @@ A SwiftUI prototype for the Kigo parent experience. It includes a home dashboard
 - **Schedule** list that highlights context and notes for each block of the day.
 - **Messages** inbox with unread badges and conversation view per staff member.
 - **Child profiles** detail cards with classroom, age, and health info.
+- **School Command** mockup tab for school-level operational metrics.
+- **Kigo Pulse LA** mockup tab for live weather, traffic, transit, AQI, and impact signals.
 
 ## Next steps
 - Wire the models to your backend or local storage.
