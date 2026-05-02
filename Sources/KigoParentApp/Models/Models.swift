@@ -129,3 +129,32 @@ struct MessageThread: Identifiable, Hashable {
         )
     ]
 }
+
+struct SchoolCommandMetric: Identifiable, Hashable {
+    let id: UUID
+    var title: String
+    var value: String
+    var trend: String
+
+    static let samples: [SchoolCommandMetric] = [
+        SchoolCommandMetric(id: UUID(), title: "Active parents", value: "86", trend: "+12 vs last week"),
+        SchoolCommandMetric(id: UUID(), title: "Walk & cycle share", value: "54%", trend: "+8% mode shift"),
+        SchoolCommandMetric(id: UUID(), title: "Carpool seats filled", value: "41", trend: "+9 this week"),
+        SchoolCommandMetric(id: UUID(), title: "On-time arrivals", value: "93%", trend: "+4% reliability")
+    ]
+}
+
+struct KigoPulseSignal: Identifiable, Hashable {
+    let id: UUID
+    var label: String
+    var status: String
+    var detail: String
+
+    static let losAngelesSamples: [KigoPulseSignal] = [
+        KigoPulseSignal(id: UUID(), label: "Weather", status: "Light rain", detail: "Rain starts 07:40 near Santa Monica"),
+        KigoPulseSignal(id: UUID(), label: "Traffic", status: "Moderate", detail: "I-10 eastbound +11 min"),
+        KigoPulseSignal(id: UUID(), label: "Transit", status: "Delay", detail: "Metro E Line delayed 6 min"),
+        KigoPulseSignal(id: UUID(), label: "Air quality", status: "AQI 74", detail: "Moderate around Downtown LA"),
+        KigoPulseSignal(id: UUID(), label: "Congestion", status: "School zone high", detail: "8:00–8:35 expected bottleneck")
+    ]
+}

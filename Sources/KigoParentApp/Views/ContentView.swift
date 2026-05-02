@@ -30,6 +30,20 @@ struct ContentView: View {
             .tabItem {
                 Label("Children", systemImage: "person.3.fill")
             }
+
+            NavigationStack {
+                SchoolCommandView()
+            }
+            .tabItem {
+                Label("School", systemImage: "building.2.fill")
+            }
+
+            NavigationStack {
+                KigoPulseLAView()
+            }
+            .tabItem {
+                Label("Pulse LA", systemImage: "dot.radiowaves.left.and.right")
+            }
         }
     }
 }

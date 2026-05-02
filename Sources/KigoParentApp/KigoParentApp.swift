@@ -16,6 +16,8 @@ final class AppState: ObservableObject {
     @Published var children: [ChildProfile] = ChildProfile.samples
     @Published var scheduleItems: [ScheduleItem] = ScheduleItem.samples
     @Published var messages: [MessageThread] = MessageThread.samples
+    @Published var schoolCommandMetrics: [SchoolCommandMetric] = SchoolCommandMetric.samples
+    @Published var kigoPulseSignals: [KigoPulseSignal] = KigoPulseSignal.losAngelesSamples
 
     func updateChildStatus(_ childID: ChildProfile.ID, status: ChildProfile.Status) {
         children = children.map { child in
