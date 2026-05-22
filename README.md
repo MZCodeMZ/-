@@ -17,3 +17,7 @@ A SwiftUI prototype for the Kigo parent experience. It includes a home dashboard
 - Wire the models to your backend or local storage.
 - Add authentication and push notifications for new messages or schedule changes.
 - Expand the schedule to sync with school calendars.
+
+
+## Case study and funding template
+- Reusable one-page ATE funding committee summary: `docs/ActiveTravelCaseStudy_ExecutiveSummary.md`.
