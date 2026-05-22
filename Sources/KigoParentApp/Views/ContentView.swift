@@ -30,6 +30,14 @@ struct ContentView: View {
             .tabItem {
                 Label("Children", systemImage: "person.3.fill")
             }
+
+
+            NavigationStack {
+                ATECaseStudyBuilderView()
+            }
+            .tabItem {
+                Label("ATE", systemImage: "doc.text.magnifyingglass")
+            }
         }
     }
 }
